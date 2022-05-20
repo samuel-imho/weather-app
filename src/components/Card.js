@@ -2,8 +2,6 @@ import dayjs from 'dayjs';
 import styled from 'styled-components'
 
 export const Card = ({ weatherData }) => {
-    console.log(weatherData);
-
     const { request, current, location } = weatherData
     const [ weatherIcon ] = current.weather_icons
     const [ weatherDescription ] = current.weather_descriptions

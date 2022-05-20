@@ -47,14 +47,7 @@ export const WeatherApp = () => {
 
     return (
         <Main>
-            <Form
-                onChangeHandler={onChangeHandler}
-                onSubmitHandler={onSubmitHandler}
-                inputField={inputField}
-                setInputField={setInputField}
-                weatherData={weatherData}
-                city={city}
-            />
+            <Form {...{ onChangeHandler, onSubmitHandler, inputField, setInputField, weatherData, city }}/>
             <Details {...{ weatherData, city, errorData }} />
         </Main>
     )

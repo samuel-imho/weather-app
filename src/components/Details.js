@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import { Card } from './Card'
 
 export const Details = ({ weatherData, errorData }) => {
-    console.clear()
-    console.log(errorData, weatherData);
     return (
         <DetailsContainer>
             <DetailsNav>
@@ -15,7 +13,7 @@ export const Details = ({ weatherData, errorData }) => {
             </DetailsNav>
 
             <div className="details-content">
-                { errorData && <h1>No data found</h1>  }
+                { errorData && <h1 className="no-data">No data found</h1>  }
                 { weatherData && <Card {...{weatherData}}/> }
             </div>
         </DetailsContainer>

@@ -5,8 +5,7 @@ export const Form = ({
     onChangeHandler,
     onSubmitHandler,
     inputField,
-    weatherData,
-    city,
+    weatherData
 }) => {
     return (
         <FormContainer>
@@ -58,8 +57,6 @@ const FormContainer = styled.div`
 
     @media only screen and (max-width: 800px) {
         height: 300px;
-        position: sticky;
-        top: 0;
     }
 
     &:before {
